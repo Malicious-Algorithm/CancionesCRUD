@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    background-image:url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2Ff%2F9%2Ff%2F1254904-neon-music-notes-wallpaper-1920x1080-xiaomi.jpg&f=1&nofb=1")
+}
+
+.titulo{
+    font-size: 1.8rem;
+}

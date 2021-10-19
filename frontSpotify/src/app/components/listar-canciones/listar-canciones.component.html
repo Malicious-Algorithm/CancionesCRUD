@@ -1,0 +1,32 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-5">
+            <div class="card">
+                <div class="card-body text-white bg-dark text-center">
+                    <span class="titulo">Mi Playlist!</span>
+                    <button class="btn btn-success float-end" routerLink="/crear-lista">NUEVA</button>
+                    <table class="table table-dark table-striped mt-5">
+                        <thead>
+                            <tr>
+                              
+                              <th scope="col">Canción</th>
+                              <th scope="col">Autor</th>
+                              <th scope="col">Año</th>
+                              <th scope="col"></th>
+                            </tr>
+                        </thead>
+                          <tbody>
+                            <tr *ngFor='let cancion of listCanciones'>
+                              <td>{{ cancion.nombre }}</td>
+                              <td>{{ cancion.autor }}</td>
+                              <td>{{ cancion.ano }}</td>
+                              <td>
+                                <i (click)="play()" class="fas fa-play text-primary"></i>
+                                <i (click)="eliminarCancion(cancion._id)" class="fas fa-trash text-danger"></i></td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
